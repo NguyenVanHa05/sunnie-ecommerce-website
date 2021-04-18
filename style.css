@@ -1,0 +1,51 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+
+
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+header{
+    grid-area: header;
+    background-color: rgb(242, 247, 244);
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(242, 247, 244);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.row a{
+    padding: 0.5rem;
+    font-size: 1.8rem;
+}
+div.brand a{
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+a:hover{
+    background-color: aqua;
+    border-radius: 1rem;
+}
